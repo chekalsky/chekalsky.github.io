@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Илья Чекальский</title>
+    <title>Ilya Chekalskiy | Илья Чекальский | Ilia Czekalski</title>
 
-    <meta name="description" content="Чекальский Илья, Chekalskiy Ilya, Chekalskii Ilia" />
+    <meta name="description" content="My contact information and links to social accounts" />
 
     <meta name="verify-v1" content="b8C/XQJeHzjLPXo+NqeGIOxFnlQWgY+KjyCcBD7v6wQ=" />
     <meta name="google-site-verification" content="_u9OFscW4iGSCZC3UTE0jBDDLz_dhrcg4q64WPMrlZw" />
@@ -301,18 +301,18 @@
         <div class="b-content">
 
             <div class="b-name">
-                Илья Чекальский
+                <span id="b-name-l10n">Ilya Chekalskiy</span>
                 <a href="https://chechannel.com/"><div class="b-circle">che</div></a>
             </div>
 
             <div class="b-cmtt">
                 <div class="b-cmtt__text">
-                    технический директор
+                    <span id="b-position-l10n">chief technology officer</span>
                 </div>
                 <div class="b-cmtt__links">
                     <a class="b-cmtt__tj" href="https://tjournal.ru/">TJournal</a>,
                     <a class="b-cmtt__vc" href="https://vc.ru/">vc.ru</a>,
-                    <a class="b-cmtt__dtf" href="https://dtf.ru/">DTF</a> и
+                    <a class="b-cmtt__dtf" href="https://dtf.ru/">DTF</a> &amp;
                     <a class="b-cmtt__spark" href="https://spark.ru/">Spark</a>
                 </div>
             </div>
@@ -332,6 +332,24 @@
         </div>
 
     </div>
+
+    <script>
+        var language = navigator.languages && navigator.languages[0] ||
+           navigator.language ||
+           navigator.userLanguage;
+
+        console.log(language);
+
+        if (language.indexOf('ru') !== -1) {
+            document.getElementById("b-name-l10n").textContent="Илья Чекальский";
+            document.title="Илья Чекальский";
+            document.getElementById("b-position-l10n").textContent="технический директор";
+        } else if (language.indexOf('pl') !== -1) {
+            document.getElementById("b-name-l10n").textContent="Ilia Czekalski";
+            document.title="Ilia Czekalski";
+            document.getElementById("b-position-l10n").textContent="dyrektor ds. technicznych";
+        }
+    </script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
