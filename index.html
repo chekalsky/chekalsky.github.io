@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Ilya Chekalskiy | Илья Чекальский | Ilia Czekalski</title>
 
-    <meta name="description" content="Ilya Chekalskiy — CTO of cmtt.ru. Here is his contact information and links to social accounts" />
+    <meta name="description" content="Ilya Chekalskiy — CTO of cmtt.ru. Here is my contact information and links to social accounts" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
@@ -21,158 +21,82 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
 
     <style>
-        html {
-            height: 100%;
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+        	margin: 0;
+        	padding: 0;
+        	border: 0;
+        	font-size: 100%;
+        	font: inherit;
+        	vertical-align: baseline;
         }
 
         body {
             width: 100%;
-            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.5em;
-            margin: 0;
+            font-family: Menlo, Consolas, "Courier New", Courier, monospace;
+            font-size: .8em;
+            line-height: 1em;
             min-height: 100%;
-            display: -webkit-flex;
-            display: flex;
+            min-width: 320px;
         }
 
         a {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px solid;
+            color: blue;
         }
 
-        a:hover {
-            color: #3A539B;
-        }
-
-        .b-page {
-            box-sizing: border-box;
-            width: 100%;
-            min-height: 100%;
-            padding: 50px 0;
-            display: -webkit-flex;
-            display: flex;
-        }
-
-        .b-content {
-            width: 100%;
-            max-width: 600px;
-            margin: auto;
-            background-color: #fff;
-            padding: 30px;
-            text-align: center;
-        }
-
-        .b-name {
+        h1 {
             display: inline-block;
             font-size: 2em;
-            line-height: 1em;
-            margin-bottom: 15px;
-            position: relative;
-            padding: 0 20px;
+            font-weight: bold;
+            line-height: 120%;
+
+            background-color: yellow;
+            padding: 2px 4px;
+            margin-left: -4px;
         }
 
-        .b-name a:hover {
-            color: inherit;
+        h2 {
+            font-size: 1.2em;
+            display: inline-block;
+            line-height: 2em;
         }
 
-        .b-circle {
-            width: 42px;
-            height: 42px;
-            border: 4px solid #D24D57;
-            background-color: #fff;
-            border-radius: 50%;
-            position: absolute;
-            left: 100%;
-            margin-left: -20px;
-            bottom: 100%;
-            margin-bottom: -10px;
-            font-size: 18px;
-            line-height: 42px;
-            font-weight: normal;
+        div.b-page {
+            margin: 25px 25px;
         }
 
-        .b-circle:hover {
-            border-color: #E82736;
-        }
-
-        .b-cmtt {
-            margin-bottom: 15px;
-        }
-        .b-cmtt__tj {
-            border-bottom-color: #EB9532;
-        }
-        .b-cmtt__vc {
-            border-bottom-color: #DB0A5B;
-        }
-        .b-cmtt__dtf {
-            border-bottom-color: #4183D7;
-        }
-        .b-cmtt__spark {
-            border-bottom-color: #2C3E50;
-        }
-
-        .b-email {
-            margin-bottom: 15px;
-        }
-
-        .b-social {
-            font-size: 14px;
-        }
-        .b-social__item:after {
-            content: ' ∙ ';
-        }
-        .b-social__item:last-child:after {
-            content: '';
-        }
-        .b-social__item a {
-            border-bottom: 0;
+        a.banner {
+            display: block;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            width: 250px;
+            padding: 4px 0;
         }
 
         @media only screen
-        and (min-width : 320px)
-        and (max-width : 374px)
-        and (orientation : portrait) {
-            .b-cmtt, .b-email {
-                font-size: 80%;
-            }
-
-            .b-social {
-                font-size: 12px;
-            }
-
-            .b-name {
-                font-size: 1.4em;
-            }
-        }
-
-        @media only screen
-        and (min-width : 375px)
         and (max-width : 413px)
         and (orientation : portrait) {
-            .b-cmtt, .b-email {
-                font-size: 90%;
+            div.b-page {
+                text-align: center;
+                margin: 25px 10px;
             }
 
-            .b-name {
-                font-size: 1.6em;
+            a.banner {
+                margin: 0 auto;
             }
         }
-
-        .b-circle {
-            animation: animationFrames linear 3s;
-            animation-iteration-count: infinite;
-            transform-origin: 50% 50%;
-            -webkit-animation: animationFrames linear 3s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-transform-origin: 50% 50%;
-            -o-animation: animationFrames linear 3s;
-            -o-animation-iteration-count: infinite;
-            -o-transform-origin: 50% 50%;
-        }
-
-        @keyframes animationFrames{0%,44%{transform:rotate(0) scaleX(1) scaleY(1)}4%,8%{transform:rotate(-3deg) scaleX(.8) scaleY(.8)}12%,20%,28%,36%{transform:rotate(3deg) scaleX(1.2) scaleY(1.2)}16%,24%,32%{transform:rotate(-3deg) scaleX(1.2) scaleY(1.2)}40%{transform:rotate(0) scaleX(1.2) scaleY(1.2)}}@-webkit-keyframes animationFrames{0%,44%{-webkit-transform:rotate(0) scaleX(1) scaleY(1)}4%,8%{-webkit-transform:rotate(-3deg) scaleX(.8) scaleY(.8)}12%,20%,28%,36%{-webkit-transform:rotate(3deg) scaleX(1.2) scaleY(1.2)}16%,24%,32%{-webkit-transform:rotate(-3deg) scaleX(1.2) scaleY(1.2)}40%{-webkit-transform:rotate(0) scaleX(1.2) scaleY(1.2)}}@-o-keyframes animationFrames{0%,44%{-o-transform:rotate(0) scaleX(1) scaleY(1)}4%,8%{-o-transform:rotate(-3deg) scaleX(.8) scaleY(.8)}12%,20%,28%,36%{-o-transform:rotate(3deg) scaleX(1.2) scaleY(1.2)}16%,24%,32%{-o-transform:rotate(-3deg) scaleX(1.2) scaleY(1.2)}40%{-o-transform:rotate(0) scaleX(1.2) scaleY(1.2)}}
     </style>
 
 </head>
@@ -180,38 +104,50 @@
 
     <div class="b-page">
 
-        <div class="b-content">
+        <h1 id="b-name-l10n">Ilya Chekalskiy</h1>
 
-            <div class="b-name">
-                <span id="b-name-l10n">Ilya Chekalskiy</span>
-                <a href="https://chechannel.com/"><div class="b-circle">che</div></a>
-            </div>
+        <br>
 
-            <div class="b-cmtt">
-                <div class="b-cmtt__text">
-                    <span id="b-position-l10n">chief technology officer</span>
-                </div>
-                <div class="b-cmtt__links">
-                    <a class="b-cmtt__tj" href="https://tjournal.ru/">TJournal</a>,
-                    <a class="b-cmtt__vc" href="https://vc.ru/">vc.ru</a>,
-                    <a class="b-cmtt__dtf" href="https://dtf.ru/">DTF</a> &amp;
-                    <a class="b-cmtt__spark" href="https://spark.ru/">Spark</a>
-                </div>
-            </div>
+        <h2 id="b-position-l10n">chief technology officer</h2>
 
-            <div class="b-email">
-                <a href="mailto:ilya@chekalskiy.ru">ilya@chekalskiy.ru</a>
-            </div>
+        <br>
 
-            <div class="b-social">
-                <span class="b-social__item"><a href="https://facebook.com/chekalskiy">fb</a></span>
-                <span class="b-social__item"><a href="https://vk.com/chekalskiy">vk</a></span>
-                <span class="b-social__item"><a href="https://twitter.com/i_compman">twitter</a></span>
-                <span class="b-social__item"><a href="https://github.com/chekalskiy">github</a></span>
-                <span class="b-social__item"><a href="https://keybase.io/chekalskiy">keybase&nbsp;PGP</a></span>
-            </div>
+        <a href="https://tjournal.ru/">TJournal</a>,
+        <a href="https://vc.ru/">vc.ru</a>,
+        <a href="https://dtf.ru/">DTF</a> &amp;
+        <a href="https://spark.ru/">Spark</a>
 
-        </div>
+        <br>
+        <br>
+        <br>
+        - C O N T A C T S ---------------
+        <br>
+        <br>
+
+        <a href="mailto:ilya@chekalskiy.ru">ilya@chekalskiy.ru</a>
+
+        <br>
+        <br>
+
+        <a href="https://t.me/ilya0">telegram</a>
+        <a href="https://facebook.com/chekalskiy">fb</a>
+        <a href="https://twitter.com/i_compman">twitter</a>
+        <a href="https://github.com/chekalskiy">github</a>
+        <a href="https://keybase.io/chekalskiy">PGP</a>
+
+        <br>
+        <br>
+        <br>
+        - L I N K S ---------------------
+        <br>
+        <br>
+
+        <a class="banner" href="https://t.me/chechannel" style="color: white; line-height: 1.2">[new] Telegram channel about life in <nobr>🇵🇱 Poland</nobr></a>
+
+        <br>
+        <br>
+
+        <a href="https://chechannel.com/">My blog about life in Poland</a>
 
     </div>
 
