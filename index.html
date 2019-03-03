@@ -44,32 +44,49 @@
 
         body {
             width: 100%;
-            font-family: Menlo, Consolas, "Courier New", Courier, monospace;
-            font-size: .8em;
-            line-height: 1em;
+            background-color: #FFD300;
+            font: .9em/1.4em -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+            -webkit-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+            -moz-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+            font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
             min-height: 100%;
             min-width: 320px;
+            font-weight: 200;
         }
 
         a {
-            color: blue;
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px solid #00000030;
+        }
+
+        a:hover {
+            border-bottom: 2px solid #00000099;
         }
 
         h1 {
-            display: inline-block;
             font-size: 2em;
-            font-weight: bold;
-            line-height: 120%;
-
-            background-color: yellow;
-            padding: 2px 4px;
-            margin-left: -4px;
+            font-weight: 900;
+            line-height: 110%;
         }
 
         h2 {
             font-size: 1.2em;
-            display: inline-block;
+            line-height: 1.4em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 1.4em;
             line-height: 2em;
+            font-weight: 900;
+        }
+
+        p {
+            margin-bottom: .4em;
         }
 
         strong {
@@ -81,17 +98,20 @@
         }
 
         .banner {
-            display: block;
-            background-color: blue;
+            display: inline-block;
+            background-color: #55433B;
             color: white;
             text-align: center;
-            width: 300px;
-            padding: 4px 0;
-            line-height: 1.2
+            padding: 5px 10px;
+            margin-bottom: .4em;
+            border-radius: 2px;
+            border: none;
         }
 
-        .banner a {
-            color: white;
+        .banner:hover {
+            color: #55433B;
+            background-color: #ffffff;
+            border: none;
         }
 
         @media only screen
@@ -115,56 +135,39 @@
 
         <h1 id="b-name-l10n">Ilya Chekalsky</h1>
 
-        <br>
-
         <h2 id="b-position-l10n">chief technology officer</h2>
 
-        <br>
+        <p>
+            at <strong>Komitet</strong>:
 
-        at <strong>Komitet</strong>:
+            <a href="https://vc.ru/">vc.ru</a>,
+            <a href="https://tjournal.ru/">TJournal</a>,
+            <a href="https://dtf.ru/">DTF</a>
+        </p>
 
-        <a href="https://vc.ru/">vc.ru</a>,
-        <a href="https://tjournal.ru/">TJournal</a>,
-        <a href="https://dtf.ru/">DTF</a>
+        <h3>Contacts</h3>
 
-        <br>
-        <br>
-        <br>
-        - C O N T A C T S ---------------
-        <br>
-        <br>
+        <p>
+            <strong><a href="mailto:ilya@chekalsky.com">ilya@chekalsky.com</a></strong>
+        </p>
 
-        <strong><a href="mailto:ilya@chekalsky.com">ilya@chekalsky.com</a></strong>
+        <p>
+            <a href="https://t.me/ilya0">telegram</a>
+            <a href="https://facebook.com/chekalskiy">fb</a>
+            <a href="https://twitter.com/i_compman">twitter</a>
+            <a href="https://github.com/chekalskiy">github</a>
+            <a href="https://keybase.io/chekalskiy">PGP</a>
+        </p>
 
-        <br>
-        <br>
+        <h3>Links</h3>
 
-        <a href="https://t.me/ilya0">telegram</a>
-        <a href="https://facebook.com/chekalskiy">fb</a>
-        <a href="https://twitter.com/i_compman">twitter</a>
-        <a href="https://github.com/chekalskiy">github</a>
-        <a href="https://keybase.io/chekalskiy">PGP</a>
+        <a href="https://t.me/techdir" class="banner">
+            👾 I write about CTO job and tech stuff
+        </a>
 
-        <br>
-        <br>
-        <br>
-        - L I N K S ---------------------
-        <br>
-        <br>
+        <p><a href="https://t.me/chechannel">Telegram channel about life in <nobr>🇵🇱 Poland</nobr></a></p>
 
-        <div class="banner">
-            👾 <a href="https://t.me/techdir">I write about PHP and CTO stuff</a>
-        </div>
-
-        <br>
-        <br>
-
-        <a href="https://t.me/chechannel">Telegram channel about life in <nobr>🇵🇱 Poland</nobr></a>
-
-        <br>
-        <br>
-
-        <a href="https://chechannel.com/">My blog about life in Poland</a>
+        <p><a href="https://chechannel.com/">My blog about life in Poland</a></p>
 
     </div>
 
