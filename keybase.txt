@@ -4,57 +4,60 @@ https://keybase.io/chekalskiy
 
 I hereby claim:
 
-  * I am an admin of https://chekalskiy.ru
+  * I am an admin of https://chekalsky.com
   * I am chekalskiy (https://keybase.io/chekalskiy) on keybase.
   * I have a public key with fingerprint 31FF 9EB9 AC17 F6C2 C108  9981 15B8 D26E 0BF2 B352
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "fingerprint": "31ff9eb9ac17f6c2c108998115b8d26e0bf2b352",
-            "host": "keybase.io",
-            "key_id": "15b8d26e0bf2b352",
-            "uid": "073a2576f3ed6f027551ec806901ba00",
-            "username": "chekalskiy"
-        },
-        "service": {
-            "hostname": "chekalskiy.ru",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0101d5550f98196a0a8020c312bf38ba4b2f2dce8c5855dffd29bc889c8877475fca0a",
+      "fingerprint": "31ff9eb9ac17f6c2c108998115b8d26e0bf2b352",
+      "host": "keybase.io",
+      "key_id": "15b8d26e0bf2b352",
+      "kid": "0101d5550f98196a0a8020c312bf38ba4b2f2dce8c5855dffd29bc889c8877475fca0a",
+      "uid": "073a2576f3ed6f027551ec806901ba00",
+      "username": "chekalskiy"
     },
-    "ctime": 1414177267,
-    "expire_in": 157680000,
-    "prev": "7ebfa590ec4945c394ceec9b2105302cafcefd788c4c29503b8c78c4ea42ed6a",
-    "seqno": 4,
-    "tag": "signature"
+    "service": {
+      "hostname": "chekalsky.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1551634637,
+  "expire_in": 157680000,
+  "prev": "c22898bfbe6fc5109727542efe0a1c21583b53827c2f4396b414e0e574962bf9",
+  "seqno": 18,
+  "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v1.1.3
+Version: Keybase OpenPGP v2.1.0
 Comment: https://keybase.io/crypto
 
-yMHkAnicbVFdSBRRFN6t1Wgz0AhE60FuUC+rzczO79oPBVkZEUgKkrTN3L3jTrvN
-rDO75uZPLWSSUmnZz5JkRlmYgUGb1VqoFbVoEEaLZA8hCaL0JGIKZneknureh8v5
-zvd955x73qxdabFbz4qXT28MxW9Yh/pnQ5bDhR0z1UDSPGHgqgY+tPzIilqO9ICu
-qEHgAk5SlgUkCSIkOZmFFCQJXhB4kmQk3kOxiJBkSnIyFHAAr2aYCmwjiQbKUzSM
-4cCteDD6H35oOUFwTpFiOFZ2Ig8rExTHMCSCPMEKBCmJBGESDaSr4gmE2dCLfKLf
-8ClhUOsAGK9UIDK7Nov/w8nTQ1ge0LWgBjU/TnmDwYDhMqXBcMDknkSS+4+LW1JU
-D54dKyqRbiiaClwkZsKgYtqSNL4cR7GcA6CqgKIjt2IycOs8gY9ZB1ViSw5JssgI
-BIK0QDPQKdAQIShIFEkwToKCogyR7OF4HtKQEhjCKfGQwwESaQp/gQjMuSpUDbho
-3KZYji0NpVwVgyEdgdrB/jKbxWq3pKasMLdnsa9O/7vTB6mrFtObv7YUNX2Plw3G
-iKc/S17EckYCN5+3DGzKpurnirvbYSK84Fe/TORPVVyslWxpA6OZ7eevNPbaE117
-kuu/1dwp6S0oZYW3yaHjBUfzc30zt/lTk48jNUv3X9vWTNr6M15mNiWKh++dK3gY
-eabPv7vb9mnxSNv0tqWOzM8f6mdjc8M1pd0zl1Ky3Aejra+sv5L7x6eYjBxHovHH
-WN+Oou2RQ/bWruv7UmzJvbvGs22uHn9uEVEYHY8DtsF4Ujg6Nl0lb51g6kaonVQ0
-Oji00Neg777V2ek9INc3N+X0xNalqeKjrKWP8TNzGwbmNxdfIzk+clW/sKVu5L37
-2MJvEbMdKA==
-=OZ5F
+yMIlAnicrVJbSFRBGN5dK2sh2IiKIkqPEpFiM3P2XGbL6qFUoujimy4sZ+bM6GFt
+z7oX28WVrOylFKOINgrqsd6iskyptKzsYpRZSkF0ITKhpIjI6Dany0v02MAw/P98
+3/d//8/fNz3H5XW3GPu2zU92Z923eg8nXcGMb6BRIraZlgKNUpj9fFidyeKJUNgy
+pYAEIICmoiiAYx1i1QCGDhCgMkSEyzox/ARxZFKmU0VXFJNzE2FCdR2Lq2l+TeFU
+cKRiiVuRGhaLxqxIQsjKkHPMCDYo1LhKEYVAx6ICVIhuIpUBwhGRFSSItXbcYQhz
+xIizEssWORGEftr7B/4/+07+ktNkAymaymVmqhwgTVEgozpQMYDEAMABxlksYmxh
+Ak1rWdioi4ettNRULIl8g0WZM1qnl78w6RJqbxH0aMxO2NSuE1+1iUQ0HnCoiXTU
+wW5lJPRbJUSsiClGKRgNLBa37IgUgAJJE5YjC4UvVfarslYssVTUirGQ5SCEdR2I
+49RhDU55hHSsE06YyqkCAdZET37EOAMGpAgqukwUWUcaRdwvY5X4oZ8Bpmh+rIoR
+Ysnpqz5iC21d+DRqhGbcqokYiWSMSU2Xe4KTXG6va8pkj7NjLu8035/Nw0dyv5WW
+Zcfylk95luN7fuF098Gqsy8W4X3H+kqDrRk5VDVYF8KbFy+5OjjR/7Kl8kBmrtbx
+Mn/n+NPCArLn7RNPfurTsxvtXb7J5yatqCnYf+JU+YKK+obmxzOGNtFcz/070vvq
+k3nn79hnVq0Z3uEtQss6vo73Z2feq9xuXGzrcI993Njedf3DsWRj5+yCtS2fdve2
+VheV9XeC4f6V8y699k0tftee6lz6xvDmmp2jHit1fOH67p6x75mHa4PSYGn9yc/B
+ju4rFRMbbsLC0abT7p7ygdXNLXMOj2dnRW/vWroucmhxdl1mYGSoy4M/b02deZO+
+u/dm2/VHo7GjX0akxt0PrvFXPwC+xUZo
+=4KUV
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
