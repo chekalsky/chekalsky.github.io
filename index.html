@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html ⚡ lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Ilya Chekalsky | Илья Чекальский | Ilia Czekalski</title>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
-    <meta name="description" content="Ilya Chekalsky (Chekalskiy) — CTO of cmtt.ru. Here is my contact information and links to social accounts" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>👨‍💻 Ilya Chekalsky | Илья Чекальский | Ilia Czekalski</title>
+
+    <meta name="description" content="My personal page CTO of vc.ru, TJ, DTF | Contacts and my links" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
@@ -17,7 +21,11 @@
     <meta name="msapplication-config" content="/ico/browserconfig.xml">
     <meta name="theme-color" content="#FFD300">
 
-    <style>
+    <link rel="canonical" href="https://chekalsky.com/">
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <style amp-custom>
         html, body, div, span, applet, object, iframe,
         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
         a, abbr, acronym, address, big, cite, code,
@@ -94,55 +102,74 @@
             margin: 25px 25px;
         }
 
-        .banner {
-            display: inline-block;
-            background-color: #55433B;
-            color: white;
-            text-align: center;
-            padding: 5px 10px;
-            margin-bottom: .4em;
-            border-radius: 2px;
-            border: none;
-        }
-
-        .banner:hover {
-            color: #55433B;
-            background-color: #ffffff;
-            border: none;
-        }
-
         @media only screen
         and (max-width : 413px)
         and (orientation : portrait) {
             div.b-page {
-                text-align: center;
-                margin: 25px 10px;
-            }
 
-            .banner {
-                margin: 0 auto .4em;
             }
+        }
+
+        .b-content-ru, .b-content-pl {
+            display: none;
+        }
+
+        .amp-geo-pending .b-page {
+            opacity: 0;
+        }
+
+        .amp-iso-country-pl .b-content-pl {
+            display: block;
+        }
+
+        .amp-iso-country-pl a.b-content-pl, .amp-iso-country-pl span.b-content-pl {
+            display: inline;
+        }
+
+        .amp-iso-country-ru .b-content-ru {
+            display: block;
+        }
+
+        .amp-iso-country-ru a.b-content-ru, .amp-iso-country-ru span.b-content-ru {
+            display: inline;
+        }
+
+        .amp-iso-country-pl .b-content-en, .amp-iso-country-pl .b-content-ru {
+            display: none;
+        }
+
+        .amp-iso-country-ru .b-content-en, .amp-iso-country-ru .b-content-pl {
+            display: none;
         }
     </style>
 
 </head>
-<body>
+<body class="amp-geo-pending">
+    <amp-geo layout="nodisplay"></amp-geo>
 
     <div class="b-page">
 
-        <h1 id="b-name-l10n">Ilya Chekalsky</h1>
+        <h1 class="b-content-en">Ilya Chekalsky</h1>
+        <h1 class="b-content-ru">Илья Чекальский</h1>
+        <h1 class="b-content-pl">Ilia Czekalski</h1>
 
-        <h2 id="b-position-l10n">chief technology officer</h2>
+        <h2 class="b-content-en">chief technology officer</h2>
+        <h2 class="b-content-ru">технический директор</h2>
+        <h2 class="b-content-pl">dyrektor ds. technicznych</h2>
 
         <p>
-            at <strong>Komitet</strong>:
+            <span class="b-content-en">at <strong>Komitet</strong>:</span>
+            <span class="b-content-ru">в <strong>Комитете</strong>:</span>
+            <span class="b-content-pl">w <strong>Komitecie</strong>:</span>
 
             <a href="https://vc.ru/">vc.ru</a>,
             <a href="https://tjournal.ru/">TJournal</a>,
             <a href="https://dtf.ru/">DTF</a>
         </p>
 
-        <h3>Contacts</h3>
+        <h3 class="b-content-en">Contacts</h3>
+        <h3 class="b-content-ru">Контакты</h3>
+        <h3 class="b-content-pl">Kontakty</h3>
 
         <p>
             <strong><a href="mailto:ilya@chekalsky.com">ilya@chekalsky.com</a></strong>
@@ -158,31 +185,19 @@
 
         <h3>Links</h3>
 
-        <a href="https://t.me/techdir" class="banner">
-            👾 I write about CTO job and tech stuff
-        </a>
+        <p class="b-content-en"><a href="https://t.me/techdir">👾 I write about CTO and tech stuff</a></p>
+        <p class="b-content-ru"><a href="https://t.me/techdir">👾 Веду канал о технологиях и работе технического директора</a></p>
+        <p class="b-content-pl"><a href="https://t.me/techdir">👾 Piszę o mojej pracy i o technologiach</a></p>
 
-        <p><a href="https://t.me/chechannel">Telegram channel about life in <nobr>🇵🇱 Poland</nobr></a></p>
+        <p class="b-content-en"><a href="https://t.me/chechannel">🇵🇱 Telegram channel about life in Poland</a></p>
+        <p class="b-content-ru"><a href="https://t.me/chechannel">🇵🇱 Мой канал о жизни в Польше</a></p>
+        <p class="b-content-pl"><a href="https://t.me/chechannel">🇵🇱 Kanał w Telegramie o życiu w Polsce</a></p>
 
-        <p><a href="https://chechannel.com/">My blog about life in Poland</a></p>
+        <p class="b-content-en"><a href="https://chechannel.com/">🇵🇱 My blog about life in Poland</a></p>
+        <p class="b-content-ru"><a href="https://chechannel.com/">🇵🇱 Мой блог о Польше</a></p>
+        <p class="b-content-pl"><a href="https://chechannel.com/">🇵🇱 Mój blog o życiu w Polsce</a></p>
 
     </div>
-
-    <script>
-        var language = navigator.languages && navigator.languages[0] ||
-           navigator.language ||
-           navigator.userLanguage;
-
-        if (language.indexOf('ru') !== -1) {
-            document.getElementById("b-name-l10n").textContent="Илья Чекальский";
-            document.title="Илья Чекальский";
-            document.getElementById("b-position-l10n").textContent="технический директор";
-        } else if (language.indexOf('pl') !== -1) {
-            document.getElementById("b-name-l10n").textContent="Ilia Czekalski";
-            document.title="Ilia Czekalski";
-            document.getElementById("b-position-l10n").textContent="dyrektor ds. technicznych";
-        }
-    </script>
 
     <script type='application/ld+json'>
     {
@@ -195,14 +210,17 @@
     }
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8978514-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-8978514-2');
-    </script>
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+                "vars" : {
+                    "gtag_id": "UA-8978514-2",
+                    "config" : {
+                        "UA-8978514-2": { "groups": "default" }
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
 </body>
 </html>
