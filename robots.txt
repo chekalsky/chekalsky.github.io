@@ -1,7 +1,6 @@
 User-agent: *
 
-Allow: /$
-Allow: /slutsky
-Allow: /sitemap.xml
-Allow: /robots.txt
-Disallow: /
+Disallow:
+Disallow: /keybase.txt
+
+Sitemap: https://chekalsky.com/sitemap.xml
