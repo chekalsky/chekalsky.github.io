@@ -50,6 +50,7 @@
         body {
             width: 100%;
             background-color: #FFD300;
+            color: #000;
             font: .9em/1.4em -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
             -webkit-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
             -moz-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
@@ -70,6 +71,19 @@
 
         a:hover {
             border-bottom: 2px solid #00000099;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #2f1159; color: #f7f2ff; }
+            
+            a {
+                color: #f7f2ff;
+                border-bottom-color: #ffffff30;
+            }
+            
+            a:hover {
+                border-bottom-color: #ffffffd99;
+            }
         }
 
         h1 {
