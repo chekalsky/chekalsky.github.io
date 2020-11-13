@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
     <title>👨‍💻 Ilya Chekalsky ∙ Илья Чекальский ∙ Ilia Czekalski</title>
 
@@ -71,15 +70,15 @@
         a:hover {
             border-bottom: 2px solid #00000099;
         }
-        
+
         @media (prefers-color-scheme: dark) {
-            body { background-color: #2f1159; color: #f7f2ff; }
-            
+            body { background-color: #212121; color: #f7f2ff; }
+
             a {
                 color: #f7f2ff;
                 border-bottom-color: #ffffff30;
             }
-            
+
             a:hover {
                 border-bottom-color: #ffffff99;
             }
@@ -94,6 +93,7 @@
         h2 {
             font-size: 1.2em;
             line-height: 1.4em;
+            margin-bottom: .3em;
         }
 
         h3 {
@@ -122,43 +122,10 @@
 
             }
         }
-
-        /*.b-content-ru, .b-content-pl {
-            display: none;
-        }
-
-        .amp-geo-pending .b-page {
-            opacity: 0;
-        }
-
-        .amp-iso-country-pl .b-content-pl {
-            display: block;
-        }
-
-        .amp-iso-country-pl a.b-content-pl, .amp-iso-country-pl span.b-content-pl {
-            display: inline;
-        }
-
-        .amp-iso-country-ru .b-content-ru {
-            display: block;
-        }
-
-        .amp-iso-country-ru a.b-content-ru, .amp-iso-country-ru span.b-content-ru {
-            display: inline;
-        }
-
-        .amp-iso-country-pl .b-content-en, .amp-iso-country-pl .b-content-ru {
-            display: none;
-        }
-
-        .amp-iso-country-ru .b-content-en, .amp-iso-country-ru .b-content-pl {
-            display: none;
-        }*/
     </style>
 
 </head>
-<body> <!--class="amp-geo-pending"-->
-    <!--<amp-geo layout="nodisplay"></amp-geo>-->
+<body>
 
     <div class="b-page">
 
@@ -167,13 +134,9 @@
         <h1 class="b-content-pl">Ilia Czekalski</h1>-->
 
         <h2 class="b-content-en">chief technology officer</h2>
-        <!--<h2 class="b-content-ru">технический директор</h2>
-        <h2 class="b-content-pl">dyrektor ds. technicznych</h2>-->
 
         <p>
             <span class="b-content-en">at <strong>Komitet</strong>:</span>
-            <!--<span class="b-content-ru">в <strong>Комитете</strong>:</span>
-            <span class="b-content-pl">w <strong>Komitecie</strong>:</span>-->
 
             <a href="https://vc.ru/">vc.ru</a>,
             <a href="https://coub.com/">Coub</a>,
@@ -181,9 +144,11 @@
             <a href="https://dtf.ru/">DTF</a>
         </p>
 
+        <p>
+            <span class="b-content-en">at <strong><a href="https://neural.love">neural.love</a></strong></span>
+        </p>
+
         <h3 class="b-content-en">Contacts</h3>
-        <!--<h3 class="b-content-ru">Контакты</h3>
-        <h3 class="b-content-pl">Kontakty</h3>-->
 
         <p>
             <strong><a href="mailto:ilya@chekalsky.com">ilya@chekalsky.com</a></strong>
@@ -192,7 +157,6 @@
         <p>
             <a href="https://t.me/ilya0">telegram</a>
             <a href="https://facebook.com/chekalskiy">fb</a>
-            <a href="https://twitter.com/i_compman">twitter</a>
             <a href="https://github.com/chekalsky">github</a>
             <a href="https://keybase.io/chekalskiy">PGP</a>
         </p>
@@ -200,16 +164,10 @@
         <h3>Links</h3>
 
         <p class="b-content-en"><a href="https://t.me/techdir">👾 I write about CTO and tech stuff</a></p>
-        <!--<p class="b-content-ru"><a href="https://t.me/techdir">👾 Веду канал о технологиях и работе технического директора</a></p>
-        <p class="b-content-pl"><a href="https://t.me/techdir">👾 Piszę o mojej pracy i o technologiach</a></p>-->
 
         <p class="b-content-en"><a href="https://t.me/chechannel">🇵🇱 Telegram channel about life in Poland</a></p>
-        <!--<p class="b-content-ru"><a href="https://t.me/chechannel">🇵🇱 Мой канал о жизни в Польше</a></p>
-        <p class="b-content-pl"><a href="https://t.me/chechannel">🇵🇱 Kanał w Telegramie o życiu w Polsce</a></p>-->
 
         <p class="b-content-en"><a href="https://chechannel.com/">🇵🇱 My blog about life in Poland</a></p>
-        <!--<p class="b-content-ru"><a href="https://chechannel.com/">🇵🇱 Мой блог о Польше</a></p>
-        <p class="b-content-pl"><a href="https://chechannel.com/">🇵🇱 Mój blog o życiu w Polsce</a></p>-->
 
     </div>
 
@@ -223,18 +181,5 @@
       "email": "ilya@chekalsky.com"
     }
     </script>
-
-    <amp-analytics type="gtag" data-credentials="include">
-        <script type="application/json">
-            {
-                "vars" : {
-                    "gtag_id": "UA-8978514-2",
-                    "config" : {
-                        "UA-8978514-2": { "groups": "default" }
-                    }
-                }
-            }
-        </script>
-    </amp-analytics>
 </body>
 </html>
