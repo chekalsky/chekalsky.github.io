@@ -137,12 +137,32 @@
             align-items: center;
         }
 
-        .photo-container::after {
-            content: '';
+        .photo-metadata {
             position: absolute;
-            inset: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 100%);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: calc(var(--spacing-unit) * 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.85rem;
+            letter-spacing: 0.012em;
+            background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+            height: 30%;
             pointer-events: none;
+            padding-top: 3rem;
+        }
+
+        .photo-metadata .camera {
+            opacity: 0.8;
+            transform: translateY(2px);
+        }
+
+        .photo-metadata .location {
+            font-weight: 500;
+            transform: translateY(2px);
         }
 
         .photo {
@@ -166,12 +186,17 @@
 
         .interpretation h2 {
             font-size: clamp(1.8rem, 2.2vw, 2.4rem);
-            margin-bottom: calc(var(--spacing-unit) * 1);
+            margin-bottom: calc(var(--spacing-unit) * 0.3);
             font-weight: 600;
             letter-spacing: -0.003em;
             background: linear-gradient(180deg, var(--primary-color) 0%, #424245 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+
+        .location {
+            font-size: 0.95rem;
+            letter-spacing: 0.012em;
         }
 
         .interpretation p {
@@ -324,6 +349,8 @@
                 imageUrl: "photos/threshold-of-departure.jpg",
                 imageAlt: "Threshold of Departure",
                 title: "Threshold of Departure",
+                location: "Amsterdam, Netherlands",
+                camera: "Fujifilm X-T30 Mark II",
                 tldr: "This photograph captures the bittersweet moment of departure, balancing the comfort of the past with the uncertainty of the future. A man checking his watch symbolizes time’s urgency, while a woman with suitcases reflects the emotional weight of leaving. A loyal dog in the doorway anchors ties to home, as the warm light inside contrasts the muted outdoors, symbolizing the pull between familiarity and possibility.",
                 description: "This photograph tells a poignant story of a moment suspended between the comfort of the past and the uncertainty of the future. The man checking his watch symbolizes the relentless passage of time and the universal anxiety that comes with impending change. His gesture underscores the urgency of the moment, while the woman beside her suitcases embodies the emotional weight of departure. Her contemplative gaze reflects the inner turmoil of leaving behind the familiar for the unknown. The dog sitting steadfast in the doorway represents loyalty and the ties that bind us to our origins, even as we stand on the cusp of new beginnings.\nThe warm glow from the open door, contrasted with the muted, overcast light outside, amplifies the emotional dichotomy of the scene — highlighting the warmth and comfort of home against the vast possibilities that lie ahead. The sunflowers and potted plants symbolize growth, resilience, and the beauty of what is being left behind. Through these elements, the artist weaves a narrative about transition, capturing the bittersweet essence of saying goodbye while embracing the journey forward. It's a universal story of departure and the complex tapestry of emotions that accompany life's pivotal moments."
             },
@@ -331,6 +358,8 @@
                 imageUrl: "photos/barriers-to-tranquility.jpg",
                 imageAlt: "Barriers to Tranquility",
                 title: "Barriers to Tranquility",
+                location: "Luxembourg",
+                camera: "Fujifilm X-T30 Mark II",
                 tldr: "This artwork contrasts nature’s beauty with human-made barriers, symbolizing obstacles that distance us from peace. Vibrant landscapes highlight the longing for freedom, suggesting harmony lies in letting life flow naturally.",
                 description: "In this evocative piece, the artist masterfully juxtaposes the allure of unspoiled nature with the imposition of human-made boundaries. The prominent symbol of restriction serves as a stark reminder of the barriers we often encounter — or erect — on the path to simplicity and peace. It invites contemplation on how society's rules can distance us from the tranquil beauty that lies just beyond our reach, emphasizing the tension between accessibility and prohibition.\nThe lush tapestry of verdant vineyards and the gentle burst of wildflowers beneath a serene sky amplify the yearning for connection with the natural world. These elements subtly critique our inclination to control and compartmentalize, suggesting that true harmony is found not in restriction but in the free flow of life's inherent beauty. The artist's choices urge us to reflect on the personal and collective paths we tread, and the unseen fences that may hinder our journey toward fulfillment."
             },
@@ -338,6 +367,8 @@
                 imageUrl: "photos/beacon-of-resilience.jpg",
                 imageAlt: "Beacon of Resilience",
                 title: "Beacon of Resilience",
+                location: "Olperer, Austria",
+                camera: "iPhone 14 Pro",
                 tldr: "This photo shows the strength of one person standing against the large and powerful natural world. The bright red backpack stands out, symbolizing personal goals and determination. It shows the courage needed to face challenges in life. The soft colors around it and the bold red create a balance between feeling vulnerable and strong. The photo tells a story about exploring, learning, and finding meaning in life.",
                 description: "The artist weaves a poignant tale of solitary resilience, capturing the essence of an individual's unwavering spirit against the indifferent vastness of the natural world. Through the bold presence of the red backpack, a symbol of personal ambition and determination, the viewer is invited to explore the inner journey of navigating life's rugged and unpredictable landscapes. This vibrant emblem stands as a testament to the courage required to face and overcome formidable obstacles, highlighting the enduring human quest for purpose and meaning.\nBeneath the subdued and tumultuous surroundings, the composition evokes a sense of introspection and emotional depth, reflecting the silent battles and moments of uncertainty that accompany personal growth. The interplay between the muted tones and the striking red accentuates the delicate balance between vulnerability and strength. Ultimately, the photograph narrates a story of exploration and self-discovery, encouraging viewers to reflect on their own paths and the silent fortitude that drives them forward through life's peaks and valleys."
             },
@@ -345,6 +376,8 @@
                 imageUrl: "photos/echoes-of-confinement.jpg",
                 imageAlt: "Echoes of Confinement",
                 title: "Echoes of Confinement",
+                location: "Kröller-Müller Museum, Netherlands",
+                camera: "Fujifilm X-T30 Mark II",
                 tldr: "The artwork explores modern life within society’s rigid structures. Mechanical walls reflect imposed order, while imperfections hint at individuality. The pale gray tones suggest detachment, and a sharp corner symbolizes confinement and potential. A sensor in the corner adds themes of surveillance, balancing safety and intrusion. The piece reflects on modernity’s sterile beauty and hidden forces, encouraging quiet introspection.",
                 description: "The artist's work tells a story of modern existence confined within the rigid frameworks of society. The unyielding walls, with their mechanical precision, represent the structures we build to impose order, yet their textured imperfections hint at individuality struggling to surface. The pale gray palette reflects emotional detachment, a neutral space where meaning feels elusive but is never absent. The sharp 90-degree corner becomes a metaphorical crossroads — confining yet teeming with potential — while the reflective floor introduces a subtle duality, inviting us to question the depth beneath appearances.\nIn the upper corner, the quiet presence of a sensor or camera shifts the narrative, injecting the theme of surveillance and control. This seemingly minor detail amplifies the tension between safety and intrusion, evoking a world where privacy is compromised in the name of order. The story unfolds as a meditation on the sterile beauty of modernity and the unseen forces shaping our lives. It is a tale of quiet resistance and introspection, where even the smallest details hold profound meaning."
             },
@@ -352,6 +385,8 @@
                 imageUrl: "photos/immense.jpg",
                 imageAlt: "Immense",
                 title: "Immense",
+                location: "Veluwe, Netherlands",
+                camera: "Fujifilm X-T30 Mark II",
                 tldr: "Titled “Immense” (rus. “Необъятная”), this photograph connects Russia’s boundless landscapes with a Dutch scene, blending geography, identity, and perception. It challenges stereotypes of national landscapes, showing how the spirit of vastness transcends borders. The work invites reflection on nature’s universal ability to evoke immensity, highlighting that profound connection is a shared human experience beyond geography.",
                 description: "This photograph creates a compelling dialogue between geography, identity, and perception. By titling the image “Immense” (“Необъятная” in Russian), the artist invokes the vast and boundless landscapes typically associated with Russia, his homeland, while presenting a scene from the Netherlands. This juxtaposition challenges our preconceived notions of national landscapes and highlights the universality of nature’s ability to evoke profound feelings of vastness and introspection. For a Russian-born individual, it acts as a bridge between two worlds, bringing a profound sense of familiarity to a foreign land. It shows that the essence of one’s homeland can be found elsewhere, as the Dutch scene mirrors the Russian spirit of vastness, connecting personal and cultural memory.\nMoreover, the landscape, though situated in the Netherlands, presents an unusual depiction for a country often associated with flatness, cultivated farmland, and urbanization. This contrast challenges viewers to question stereotypes of national landscapes. It raises thought-provoking questions about how landscapes are tied to cultural and national identity, emphasizing the universality of nature’s ability to evoke feelings of immensity. The photograph invites us to reconsider our perceptions, showing that immensity is more of a shared human experience than a geographically fixed attribute."
             }
@@ -373,6 +408,10 @@
                 <article class="tile">
                     <div class="photo-container">
                         <img src="${item.imageUrl}" alt="${item.imageAlt}" class="photo">
+                        <div class="photo-metadata">
+                            <span class="camera">${item.camera}</span>
+                            <span class="location">${item.location}</span>
+                        </div>
                     </div>
                     <div class="interpretation">
                         <h2>${item.title}</h2>
