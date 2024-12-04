@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Machine Vision - AI Art Project</title>
+    <meta name="title" content="Machine Vision - AI Art Project">
+    <meta name="description" content="Can a machine touch the human soul? Machine Vision explores AI's ability to interpret imagery and mirror human thought, questioning the depth of artificial perception.">
+    <meta name="author" content="Ilya Chekalsky">
+    <meta name="keywords" content="machine vision, AI art, artificial intelligence, photography, digital art">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chekalsky.com/machine-vision/">
+    <meta property="og:title" content="Machine Vision - AI Art Project">
+    <meta property="og:description" content="Can a machine touch the human soul? Machine Vision explores AI's ability to interpret imagery and mirror human thought, questioning the depth of artificial perception.">
+    <meta property="og:image" content="https://chekalsky.com/machine-vision/og.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chekalsky.com/machine-vision/">
+    <meta property="twitter:title" content="Machine Vision - AI Art Project">
+    <meta property="twitter:description" content="Can a machine touch the human soul? Machine Vision explores AI's ability to interpret imagery and mirror human thought, questioning the depth of artificial perception.">
+    <meta property="twitter:image" content="https://chekalsky.com/machine-vision/og.jpg">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#f5f5f7">
+
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://chekalsky.com/machine-vision">
+    <meta name="robots" content="index, follow">
+
+    <style>
+        :root {
+            --primary-color: #1d1d1f;
+            --secondary-color: #6e6e73;
+            --background-color: #f5f5f7;
+            --card-background: #ffffff;
+            --spacing-unit: clamp(1rem, 2vw, 2rem);
+            --section-spacing: clamp(3rem, 8vw, 8rem);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.47059;
+            background: var(--background-color);
+            color: var(--primary-color);
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: var(--section-spacing) 0;
+            background: var(--card-background);
+            position: relative;
+            z-index: 1;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 8vw, 5.5rem);
+            margin-bottom: calc(var(--spacing-unit) * 1.2);
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(180deg, var(--primary-color) 0%, #424245 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 0 var(--spacing-unit);
+            line-height: 1.05;
+        }
+
+        .description {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+            color: var(--secondary-color);
+            font-weight: 400;
+            letter-spacing: 0.004em;
+            padding: 0 var(--spacing-unit);
+            line-height: 1.47059;
+        }
+
+        .gallery {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            gap: calc(var(--spacing-unit) * 4);
+            padding: var(--section-spacing) calc(var(--spacing-unit) * 2);
+            min-height: 100vh;
+        }
+
+        .tile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: calc(var(--spacing-unit) * 3);
+            background: var(--card-background);
+            border-radius: 14px;
+            padding: calc(var(--spacing-unit) * 2);
+            will-change: opacity, transform;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.8s cubic-bezier(0.41, 0, 0.22, 1) forwards;
+            transition: transform 0.5s cubic-bezier(0.41, 0, 0.22, 1);
+        }
+
+        .tile:hover {
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .photo-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: var(--background-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .photo-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0) 100%);
+            pointer-events: none;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            aspect-ratio: 9/16;
+            transition: transform 0.7s cubic-bezier(0.41, 0, 0.22, 1);
+            will-change: transform;
+            filter: brightness(0.98);
+            display: block;
+            margin: 0;
+        }
+
+        .interpretation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: calc(var(--spacing-unit) * 0.5);
+        }
+
+        .interpretation h2 {
+            font-size: clamp(1.8rem, 2.2vw, 2.4rem);
+            margin-bottom: calc(var(--spacing-unit) * 1);
+            font-weight: 600;
+            letter-spacing: -0.003em;
+            background: linear-gradient(180deg, var(--primary-color) 0%, #424245 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .interpretation p {
+            color: var(--secondary-color);
+            font-size: clamp(0.9rem, 1vw, 1.1rem);
+            line-height: 1.6;
+            letter-spacing: 0.004em;
+            margin-bottom: 1rem;
+        }
+
+        /* Add subtle scroll-based parallax */
+        @media (prefers-reduced-motion: no-preference) {
+            .tile {
+                transform-style: preserve-3d;
+                perspective: 1000px;
+            }
+
+            .photo-container {
+                transform: translateZ(-10px);
+                transition: transform 0.5s cubic-bezier(0.41, 0, 0.22, 1);
+            }
+
+            .tile:hover .photo-container {
+                transform: translateZ(0);
+            }
+        }
+
+        /* Improved mobile styles */
+        @media (max-width: 868px) {
+            .tile {
+                grid-template-columns: 1fr;
+                padding: calc(var(--spacing-unit) * 1.5);
+                gap: calc(var(--spacing-unit) * 2);
+            }
+
+            .interpretation {
+                padding: 0;
+            }
+
+            .description {
+                font-size: 1.1rem;
+                padding: 0 calc(var(--spacing-unit) * 2);
+            }
+        }
+
+        /* Apple-style animation delay for tiles */
+        .tile:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .tile:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .footer {
+            text-align: center;
+            padding: var(--spacing-unit);
+            background: var(--card-background);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer .disclaimer {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--secondary-color);
+            opacity: 0.8;
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add subtle animation for header elements */
+        @media (prefers-reduced-motion: no-preference) {
+            .header h1 {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUp 1s cubic-bezier(0.41, 0, 0.22, 1) forwards;
+            }
+
+            .header .description {
+                opacity: 0;
+                transform: translateY(20px);
+                animation: fadeInUp 1s cubic-bezier(0.41, 0, 0.22, 1) 0.2s forwards;
+            }
+
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        /* Improved responsive adjustments */
+        @media (max-width: 768px) {
+            .header {
+                padding: calc(var(--section-spacing) * 0.7) 0;
+            }
+
+            h1 {
+                font-size: clamp(2.5rem, 6vw, 3.5rem);
+                padding: 0 calc(var(--spacing-unit) * 1.5);
+            }
+
+            .description {
+                font-size: clamp(1.1rem, 1.2vw, 1.3rem);
+                padding: 0 calc(var(--spacing-unit) * 2);
+            }
+        }
+    </style>
+    <script>
+        const galleryItems = [
+            {
+                imageUrl: "photos/threshold-of-departure.jpg",
+                imageAlt: "Threshold of Departure",
+                title: "Threshold of Departure",
+                description: "This photograph tells a poignant story of a moment suspended between the comfort of the past and the uncertainty of the future. The man checking his watch symbolizes the relentless passage of time and the universal anxiety that comes with impending change. His gesture underscores the urgency of the moment, while the woman beside her suitcases embodies the emotional weight of departure. Her contemplative gaze reflects the inner turmoil of leaving behind the familiar for the unknown. The dog sitting steadfast in the doorway represents loyalty and the ties that bind us to our origins, even as we stand on the cusp of new beginnings.\nThe warm glow from the open door, contrasted with the muted, overcast light outside, amplifies the emotional dichotomy of the scene—highlighting the warmth and comfort of home against the vast possibilities that lie ahead. The sunflowers and potted plants symbolize growth, resilience, and the beauty of what is being left behind. Through these elements, the artist weaves a narrative about transition, capturing the bittersweet essence of saying goodbye while embracing the journey forward. It’s a universal story of departure and the complex tapestry of emotions that accompany life’s pivotal moments."
+            },
+            {
+                imageUrl: "photos/barriers-to-tranquility.jpg",
+                imageAlt: "Barriers to Tranquility",
+                title: "Barriers to Tranquility",
+                description: "In this evocative piece, the artist masterfully juxtaposes the allure of unspoiled nature with the imposition of human-made boundaries. The prominent symbol of restriction serves as a stark reminder of the barriers we often encounter—or erect—on the path to simplicity and peace. It invites contemplation on how society’s rules can distance us from the tranquil beauty that lies just beyond our reach, emphasizing the tension between accessibility and prohibition.\nThe lush tapestry of verdant vineyards and the gentle burst of wildflowers beneath a serene sky amplify the yearning for connection with the natural world. These elements subtly critique our inclination to control and compartmentalize, suggesting that true harmony is found not in restriction but in the free flow of life’s inherent beauty. The artist’s choices urge us to reflect on the personal and collective paths we tread, and the unseen fences that may hinder our journey toward fulfillment."
+            },
+            {
+                imageUrl: "photos/beacon-of-resilience.jpg",
+                imageAlt: "Beacon of Resilience",
+                title: "Beacon of Resilience",
+                description: "The artist weaves a poignant tale of solitary resilience, capturing the essence of an individual’s unwavering spirit against the indifferent vastness of the natural world. Through the bold presence of the red backpack, a symbol of personal ambition and determination, the viewer is invited to explore the inner journey of navigating life’s rugged and unpredictable landscapes. This vibrant emblem stands as a testament to the courage required to face and overcome formidable obstacles, highlighting the enduring human quest for purpose and meaning.\nBeneath the subdued and tumultuous surroundings, the composition evokes a sense of introspection and emotional depth, reflecting the silent battles and moments of uncertainty that accompany personal growth. The interplay between the muted tones and the striking red accentuates the delicate balance between vulnerability and strength. Ultimately, the photograph narrates a story of exploration and self-discovery, encouraging viewers to reflect on their own paths and the silent fortitude that drives them forward through life’s peaks and valleys."
+            },
+            {
+                imageUrl: "photos/echoes-of-confinement.jpg",
+                imageAlt: "Echoes of Confinement",
+                title: "Echoes of Confinement",
+                description: "The artist’s work tells a story of modern existence confined within the rigid frameworks of society. The unyielding walls, with their mechanical precision, represent the structures we build to impose order, yet their textured imperfections hint at individuality struggling to surface. The pale gray palette reflects emotional detachment, a neutral space where meaning feels elusive but is never absent. The sharp 90-degree corner becomes a metaphorical crossroads—confining yet teeming with potential—while the reflective floor introduces a subtle duality, inviting us to question the depth beneath appearances.\nIn the upper corner, the quiet presence of a sensor or camera shifts the narrative, injecting the theme of surveillance and control. This seemingly minor detail amplifies the tension between safety and intrusion, evoking a world where privacy is compromised in the name of order. The story unfolds as a meditation on the sterile beauty of modernity and the unseen forces shaping our lives. It is a tale of quiet resistance and introspection, where even the smallest details hold profound meaning."
+            }
+        ];
+
+        window.onload = function() {
+            const gallery = document.querySelector('.gallery');
+            gallery.innerHTML = galleryItems.map(item => `
+                <article class="tile">
+                    <div class="photo-container">
+                        <img src="${item.imageUrl}" alt="${item.imageAlt}" class="photo">
+                    </div>
+                    <div class="interpretation">
+                        <h2>${item.title}</h2>
+                        ${item.description.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
+                    </div>
+                </article>
+            `).join('');
+        };
+
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            window.addEventListener('scroll', () => {
+                const tiles = document.querySelectorAll('.tile');
+                tiles.forEach(tile => {
+                    const speed = 0.05;
+                    const rect = tile.getBoundingClientRect();
+                    const scrolled = window.pageYOffset;
+                    const offset = rect.top + scrolled;
+                    const parallax = (scrolled - offset) * speed;
+
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        tile.style.transform = `translateY(${parallax}px)`;
+                    }
+                });
+            }, { passive: true });
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>Machine Vision</h1>
+        <p class="description">
+            Can a machine touch the human soul? In Machine Vision, artificial intelligence examines the world through diverse imagery, offering profound interpretations that mirror the complexities of human thought. This project invites us to question not only what machines can perceive, but whether they can truly grasp the depth of our emotions, stories, and essence.
+        </p>
+    </header>
+
+    <main class="gallery"></main>
+
+    <footer class="footer">
+        <p>Art project by <a href="https://chekalsky.com" target="_blank" rel="noopener">Ilya Chekalsky</a> © 2024</p>
+        <p class="disclaimer">Photographs are courtesy of the author. Descriptions are AI-made using ChatGPT.</p>
+    </footer>
+</body>
+</html>
