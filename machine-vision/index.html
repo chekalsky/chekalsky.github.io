@@ -342,6 +342,36 @@
             margin: 0;
             letter-spacing: 0.012em;
         }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #f5f5f7;
+                --secondary-color: #a1a1a6;
+                --background-color: #1d1d1f;
+                --card-background: #2d2d2f;
+            }
+
+            /* Fix gradient text for dark mode */
+            h1, .interpretation h2 {
+                background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            /* Rest of dark mode styles... */
+            .header, .footer {
+                border-color: rgba(255,255,255,0.1);
+            }
+
+            .photo {
+                filter: brightness(0.9);
+            }
+
+            .photo-metadata {
+                background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+            }
+        }
     </style>
     <script>
         const galleryItems = [
