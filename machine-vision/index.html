@@ -294,6 +294,29 @@
                 padding: 0 calc(var(--spacing-unit) * 2);
             }
         }
+
+        /* Add this to your existing CSS, before the media queries */
+        .tldr {
+            background: var(--background-color);
+            border-radius: 8px;
+            padding: calc(var(--spacing-unit) * 0.8);
+            margin-bottom: calc(var(--spacing-unit) * 1.2);
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .tldr strong {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        .tldr p {
+            color: var(--secondary-color);
+            display: inline;
+            margin: 0;
+            letter-spacing: 0.012em;
+        }
     </style>
     <script>
         const galleryItems = [
@@ -301,31 +324,36 @@
                 imageUrl: "photos/threshold-of-departure.jpg",
                 imageAlt: "Threshold of Departure",
                 title: "Threshold of Departure",
-                description: "This photograph tells a poignant story of a moment suspended between the comfort of the past and the uncertainty of the future. The man checking his watch symbolizes the relentless passage of time and the universal anxiety that comes with impending change. His gesture underscores the urgency of the moment, while the woman beside her suitcases embodies the emotional weight of departure. Her contemplative gaze reflects the inner turmoil of leaving behind the familiar for the unknown. The dog sitting steadfast in the doorway represents loyalty and the ties that bind us to our origins, even as we stand on the cusp of new beginnings.\nThe warm glow from the open door, contrasted with the muted, overcast light outside, amplifies the emotional dichotomy of the scene — highlighting the warmth and comfort of home against the vast possibilities that lie ahead. The sunflowers and potted plants symbolize growth, resilience, and the beauty of what is being left behind. Through these elements, the artist weaves a narrative about transition, capturing the bittersweet essence of saying goodbye while embracing the journey forward. It’s a universal story of departure and the complex tapestry of emotions that accompany life’s pivotal moments."
+                tldr: "This photograph captures the bittersweet moment of departure, balancing the comfort of the past with the uncertainty of the future. A man checking his watch symbolizes time’s urgency, while a woman with suitcases reflects the emotional weight of leaving. A loyal dog in the doorway anchors ties to home, as the warm light inside contrasts the muted outdoors, symbolizing the pull between familiarity and possibility. Sunflowers and plants represent growth and resilience, weaving a universal story of transition and the emotions of saying goodbye.",
+                description: "This photograph tells a poignant story of a moment suspended between the comfort of the past and the uncertainty of the future. The man checking his watch symbolizes the relentless passage of time and the universal anxiety that comes with impending change. His gesture underscores the urgency of the moment, while the woman beside her suitcases embodies the emotional weight of departure. Her contemplative gaze reflects the inner turmoil of leaving behind the familiar for the unknown. The dog sitting steadfast in the doorway represents loyalty and the ties that bind us to our origins, even as we stand on the cusp of new beginnings.\nThe warm glow from the open door, contrasted with the muted, overcast light outside, amplifies the emotional dichotomy of the scene — highlighting the warmth and comfort of home against the vast possibilities that lie ahead. The sunflowers and potted plants symbolize growth, resilience, and the beauty of what is being left behind. Through these elements, the artist weaves a narrative about transition, capturing the bittersweet essence of saying goodbye while embracing the journey forward. It's a universal story of departure and the complex tapestry of emotions that accompany life's pivotal moments."
             },
             {
                 imageUrl: "photos/barriers-to-tranquility.jpg",
                 imageAlt: "Barriers to Tranquility",
                 title: "Barriers to Tranquility",
-                description: "In this evocative piece, the artist masterfully juxtaposes the allure of unspoiled nature with the imposition of human-made boundaries. The prominent symbol of restriction serves as a stark reminder of the barriers we often encounter — or erect — on the path to simplicity and peace. It invites contemplation on how society’s rules can distance us from the tranquil beauty that lies just beyond our reach, emphasizing the tension between accessibility and prohibition.\nThe lush tapestry of verdant vineyards and the gentle burst of wildflowers beneath a serene sky amplify the yearning for connection with the natural world. These elements subtly critique our inclination to control and compartmentalize, suggesting that true harmony is found not in restriction but in the free flow of life’s inherent beauty. The artist’s choices urge us to reflect on the personal and collective paths we tread, and the unseen fences that may hinder our journey toward fulfillment."
+                tldr: "This artwork contrasts nature’s beauty with human-made barriers, symbolizing obstacles that distance us from peace. Vibrant landscapes highlight the longing for freedom, suggesting harmony lies in letting life flow naturally. It prompts reflection on the unseen limits that hinder our paths to happiness.",
+                description: "In this evocative piece, the artist masterfully juxtaposes the allure of unspoiled nature with the imposition of human-made boundaries. The prominent symbol of restriction serves as a stark reminder of the barriers we often encounter — or erect — on the path to simplicity and peace. It invites contemplation on how society's rules can distance us from the tranquil beauty that lies just beyond our reach, emphasizing the tension between accessibility and prohibition.\nThe lush tapestry of verdant vineyards and the gentle burst of wildflowers beneath a serene sky amplify the yearning for connection with the natural world. These elements subtly critique our inclination to control and compartmentalize, suggesting that true harmony is found not in restriction but in the free flow of life's inherent beauty. The artist's choices urge us to reflect on the personal and collective paths we tread, and the unseen fences that may hinder our journey toward fulfillment."
             },
             {
                 imageUrl: "photos/beacon-of-resilience.jpg",
                 imageAlt: "Beacon of Resilience",
                 title: "Beacon of Resilience",
-                description: "The artist weaves a poignant tale of solitary resilience, capturing the essence of an individual’s unwavering spirit against the indifferent vastness of the natural world. Through the bold presence of the red backpack, a symbol of personal ambition and determination, the viewer is invited to explore the inner journey of navigating life’s rugged and unpredictable landscapes. This vibrant emblem stands as a testament to the courage required to face and overcome formidable obstacles, highlighting the enduring human quest for purpose and meaning.\nBeneath the subdued and tumultuous surroundings, the composition evokes a sense of introspection and emotional depth, reflecting the silent battles and moments of uncertainty that accompany personal growth. The interplay between the muted tones and the striking red accentuates the delicate balance between vulnerability and strength. Ultimately, the photograph narrates a story of exploration and self-discovery, encouraging viewers to reflect on their own paths and the silent fortitude that drives them forward through life’s peaks and valleys."
+                tldr: "This photo shows the strength of one person standing against the large and powerful natural world. The bright red backpack stands out, symbolizing personal goals and determination. It shows the courage needed to face challenges in life. The soft colors around it and the bold red create a balance between feeling vulnerable and strong. The photo tells a story about exploring, learning, and finding meaning in life.",
+                description: "The artist weaves a poignant tale of solitary resilience, capturing the essence of an individual's unwavering spirit against the indifferent vastness of the natural world. Through the bold presence of the red backpack, a symbol of personal ambition and determination, the viewer is invited to explore the inner journey of navigating life's rugged and unpredictable landscapes. This vibrant emblem stands as a testament to the courage required to face and overcome formidable obstacles, highlighting the enduring human quest for purpose and meaning.\nBeneath the subdued and tumultuous surroundings, the composition evokes a sense of introspection and emotional depth, reflecting the silent battles and moments of uncertainty that accompany personal growth. The interplay between the muted tones and the striking red accentuates the delicate balance between vulnerability and strength. Ultimately, the photograph narrates a story of exploration and self-discovery, encouraging viewers to reflect on their own paths and the silent fortitude that drives them forward through life's peaks and valleys."
             },
             {
                 imageUrl: "photos/echoes-of-confinement.jpg",
                 imageAlt: "Echoes of Confinement",
                 title: "Echoes of Confinement",
-                description: "The artist’s work tells a story of modern existence confined within the rigid frameworks of society. The unyielding walls, with their mechanical precision, represent the structures we build to impose order, yet their textured imperfections hint at individuality struggling to surface. The pale gray palette reflects emotional detachment, a neutral space where meaning feels elusive but is never absent. The sharp 90-degree corner becomes a metaphorical crossroads — confining yet teeming with potential — while the reflective floor introduces a subtle duality, inviting us to question the depth beneath appearances.\nIn the upper corner, the quiet presence of a sensor or camera shifts the narrative, injecting the theme of surveillance and control. This seemingly minor detail amplifies the tension between safety and intrusion, evoking a world where privacy is compromised in the name of order. The story unfolds as a meditation on the sterile beauty of modernity and the unseen forces shaping our lives. It is a tale of quiet resistance and introspection, where even the smallest details hold profound meaning."
+                tldr: "The artwork explores modern life within society’s rigid structures. Mechanical walls reflect imposed order, while imperfections hint at individuality. The pale gray tones suggest detachment, and a sharp corner symbolizes confinement and potential. A sensor in the corner adds themes of surveillance, balancing safety and intrusion. The piece reflects on modernity’s sterile beauty and hidden forces, encouraging quiet introspection.",
+                description: "The artist's work tells a story of modern existence confined within the rigid frameworks of society. The unyielding walls, with their mechanical precision, represent the structures we build to impose order, yet their textured imperfections hint at individuality struggling to surface. The pale gray palette reflects emotional detachment, a neutral space where meaning feels elusive but is never absent. The sharp 90-degree corner becomes a metaphorical crossroads — confining yet teeming with potential — while the reflective floor introduces a subtle duality, inviting us to question the depth beneath appearances.\nIn the upper corner, the quiet presence of a sensor or camera shifts the narrative, injecting the theme of surveillance and control. This seemingly minor detail amplifies the tension between safety and intrusion, evoking a world where privacy is compromised in the name of order. The story unfolds as a meditation on the sterile beauty of modernity and the unseen forces shaping our lives. It is a tale of quiet resistance and introspection, where even the smallest details hold profound meaning."
             },
             {
                 imageUrl: "photos/immense.jpg",
                 imageAlt: "Immense",
                 title: "Immense",
-                description: "This photograph intricately weaves a narrative that bridges geography, identity, and perception. By titling the image “Immense” (rus. “Необъятная”), the artist invokes the vast and boundless landscapes typically associated with Russia, his homeland, while presenting a scene from the Netherlands. This juxtaposition challenges our preconceived notions of national landscapes and highlights the universality of nature’s ability to evoke profound feelings of vastness and introspection. The seemingly infinite path cutting through the untamed land mirrors the sprawling Russian steppes, symbolizing openness and the boundless journey of life.\nMoreover, the winding path serves as a metaphor for the artist’s personal journey of migration, belonging, and adaptation. It suggests movement and exploration, embodying the idea of finding traces of “home” in unfamiliar places. The simplicity of the composition — with its elemental earth, grass, and sky — emphasizes that immensity is not tied to grandeur but is a shared human experience accessible in any natural space. In essence, the artwork transcends geographical boundaries, connecting personal and cultural memories, and blurring the lines between “here” and “there” to evoke a sense of both familiarity and universality."
+                tldr: "Titled “Immense”, this photograph links Russia’s vastness to a Dutch landscape, blending identity and memory. It challenges stereotypes of national landscapes, showing that the essence of home and the feeling of immensity transcend geography, uniting us through shared human experience.",
+                description: "This photograph creates a compelling dialogue between geography, identity, and perception. By titling the image “Immense” (“Необъятная” in Russian), the artist invokes the vast and boundless landscapes typically associated with Russia, his homeland, while presenting a scene from the Netherlands. This juxtaposition challenges our preconceived notions of national landscapes and highlights the universality of nature’s ability to evoke profound feelings of vastness and introspection. For a Russian-born individual, it acts as a bridge between two worlds, bringing a profound sense of familiarity to a foreign land. It shows that the essence of one’s homeland can be found elsewhere, as the Dutch scene mirrors the Russian spirit of vastness, connecting personal and cultural memory.\nMoreover, the landscape, though situated in the Netherlands, presents an unusual depiction for a country often associated with flatness, cultivated farmland, and urbanization. This contrast challenges viewers to question stereotypes of national landscapes. It raises thought-provoking questions about how landscapes are tied to cultural and national identity, emphasizing the universality of nature’s ability to evoke feelings of immensity. The photograph invites us to reconsider our perceptions, showing that immensity is more of a shared human experience than a geographically fixed attribute."
             }
         ];
 
@@ -348,6 +376,10 @@
                     </div>
                     <div class="interpretation">
                         <h2>${item.title}</h2>
+                        <div class="tldr">
+                            <strong>TL;DR</strong>
+                            <p>${item.tldr}</p>
+                        </div>
                         ${item.description.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
                     </div>
                 </article>
